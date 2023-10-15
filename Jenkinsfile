@@ -14,13 +14,9 @@ node {
       checkout scm
     }
   
-    stage('build') {
+    stage('build/test') {
       sh 'mvn clean package'
-    }
-
-    stage('test') {
-      sh 'mvn test'
-    }
+    }    
   
     stage('deploy') {
       def resourceGroup = 'demoAppJenkins_group'
