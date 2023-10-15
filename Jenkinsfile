@@ -19,10 +19,7 @@ node {
     } 
 
     stage('test') {
-      agent { label 'TESTING​' }
-      steps{        
-        sh 'mvn test'
-      }
+      sh 'mvn test'      
     } 
   
     stage('deploy') {
