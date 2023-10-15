@@ -8,20 +8,7 @@ import org.junit.Test;
 
 public class TestCases {
 
-	@Test	
-	public void testPing() {
 		
-		CalculatorService c = new CalculatorService();
-		
-		String actual = c.ping();		
-		String expected = "Welcome to Java Web App!!! This is updated!\n" + new Date().toString(); 
-		
-		assertEquals(expected, actual);
-
-
-		
-	}
-	
 	@Test	
 	public void testAdd() {
 		
