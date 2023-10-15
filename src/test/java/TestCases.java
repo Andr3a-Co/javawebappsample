@@ -42,7 +42,7 @@ public class TestCases {
 		CalculatorService c = new CalculatorService();		
 
 		int actual = c.Sub(5, 3).getResult();		
-		int expected = 5; 
+		int expected = 2; 
 		
 		assertEquals(expected, actual);
 
