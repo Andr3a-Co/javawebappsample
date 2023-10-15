@@ -14,12 +14,15 @@ node {
       checkout scm
     }
   
-    stage('build/test') {
+    stage('build/test') {      
       sh 'mvn clean package'
     } 
 
     stage('test') {
-      sh 'mvn test'
+      node("TESTING"){
+        echo 'Testing..'
+        sh 'mvn test'
+      }
     } 
   
     stage('deploy') {
