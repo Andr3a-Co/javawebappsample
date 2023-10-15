@@ -2,6 +2,8 @@ package ms.kenchen.Calculator;
 
 import java.util.Date;
 
+import javax.ws.rs.QueryParam;
+
 public class CalculatorResponse {
     int _x;
     int _y;
@@ -14,7 +16,8 @@ public class CalculatorResponse {
         _result = result;
         _time = new Date().toString();
     }
-
+    
+ 
     public int getX() { return _x; }
 
     public int getY() { return _y; }
@@ -22,4 +25,6 @@ public class CalculatorResponse {
     public int getResult() { return _result; }
 
     public String getTime() { return _time; }
+    
+    
 }
