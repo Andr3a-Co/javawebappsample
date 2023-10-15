@@ -6,7 +6,7 @@ import java.util.Date;
 
 import org.junit.Test;
 
-public class testcases {
+public class TestCases {
 
 	@Test	
 	public void testPing() {
