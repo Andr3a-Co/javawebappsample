@@ -19,8 +19,8 @@ node {
     } 
 
     stage('test') {
-      node("TESTING"){
-        echo 'Testing..'
+      agent { label 'TESTING​' }
+      steps{        
         sh 'mvn test'
       }
     } 
