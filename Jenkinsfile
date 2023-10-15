@@ -17,6 +17,10 @@ node {
     stage('build') {
       sh 'mvn clean package'
     }
+
+    stage('test') {
+      sh 'mvnw test'
+    }
   
     stage('deploy') {
       def resourceGroup = 'demoAppJenkins_group'
