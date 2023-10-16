@@ -13,7 +13,7 @@ public class CalculatorService {
     @Path("ping")
     @Produces(MediaType.TEXT_PLAIN)
     public String ping() {
-        return "Welcome to Java Web App!!! This is a small change to check automated build!\n" + new Date().toString() + "SUCCESS";
+        return "Welcome to Java Web App!!! This is a small change to check automated build!!!\n" + new Date().toString() + "SUCCESS";
     }
 
     @GET
